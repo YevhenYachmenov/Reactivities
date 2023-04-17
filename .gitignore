@@ -476,5 +476,5 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-API/reactivities.db
+API/reactivities.db*
 appsettings.json
