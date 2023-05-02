@@ -1,18 +1,20 @@
 import React from 'react';
-import { Dimmer, Loader } from 'semantic-ui-react';
+import { Dimmer, Loader, SemanticSIZES } from 'semantic-ui-react';
 
 interface Props {
     inverted?: boolean;
     content?: string;
+    size?: SemanticSIZES;
 }
 
 export default function LoadingComponent({
     inverted = true,
-    content = 'Loading...'
+    content = 'Loading...',
+    size = 'massive'
 }: Props) {
     return (
         <Dimmer active={true} inverted={inverted}>
-            <Loader content={content} />
+            <Loader size={size} content={content} />
         </Dimmer>
     );
 }
